@@ -14,9 +14,9 @@ CACHE_DIR=$2
 ENV_DIR=$3
 
 # add the rsvg to the future PATH + update actual PATH
-echo ":$BUILD_DIR/rsvg" >> $ENV_DIR/PATH
-echo ":$BUILD_DIR/rsvg" >> $ENV_DIR/BIN_PATH
-echo ":$BUILD_DIR/rsvg" >> $ENV_DIR/LD_LIBRARY_PATH
+echo "$BUILD_DIR/rsvg" >> $ENV_DIR/PATH
+echo "$BUILD_DIR/rsvg" >> $ENV_DIR/BIN_PATH
+echo "$BUILD_DIR/rsvg" >> $ENV_DIR/LD_LIBRARY_PATH
 export PATH="$PATH:$BUILD_DIR/rsvg"
 # copy the buildpack to the right place
 cp -r $BIN_DIR/../rsvg $BUILD_DIR
