@@ -18,7 +18,7 @@ ENV_DIR=$3
 #echo "$BUILD_DIR/rsvg" >> $ENV_DIR/BIN_PATH
 #echo "$BUILD_DIR/rsvg" >> $ENV_DIR/LD_LIBRARY_PATH
 
-export PATH="$BUILD_DIR/rsvg":$PATH
+export PATH="$PATH:$BIN_DIR/rsvg"
 echo $PATH
 
 # copy the buildpack to the right place
