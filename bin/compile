@@ -24,7 +24,8 @@ echo $PATH
 # copy the buildpack to the right place
 cp -r $BIN_DIR/../rsvg/* $BUILD_DIR
 cp -r $BIN_DIR/../rsvg $BUILD_DIR
-cp $BIN_DIR/../rsvg/* $BUILD_DIR
+cp $BIN_DIR/../rsvg/* $BIN_DIR/../bin/
+ls $BIN_DIR
 
 echo "Copying $BIN_DIR/../rsvg/* to $BUILD_DIR"
 which rsvg-convert
