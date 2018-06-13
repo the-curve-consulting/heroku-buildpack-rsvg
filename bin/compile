@@ -43,7 +43,7 @@ set +e  # disable error checking
 # run testing build
 build-step "Now - running the testing build\n\n\n"
 
-./rsvg-convert test.svg -u --keep-image-data --format=pdf -o test.pdf
+rsvg-convert --version
 
 exit 0
 
