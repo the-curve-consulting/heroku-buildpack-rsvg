@@ -32,7 +32,7 @@ set +e  # disable error checking
 # run testing build
 build-step "Now - running the testing build\n\n\n"
 
-cd $BUILD_DIR/rsvg/
+cd $BUILD_DIR/
 echo "\n\n\nWe are here now:"
 pwd
 ls -halF .

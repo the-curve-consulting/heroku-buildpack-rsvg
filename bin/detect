@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 # bin/detect <build-dir>
 
-echo "milos-korenciak/heroku-buildpack-rsvg"
+echo "rarebitsio/heroku-buildpack-rsvg"
